@@ -1,6 +1,6 @@
 #include <iostream>
 #include <cstdlib> //for random value;
-
+#include<ctime>// for changing value in time
 using namespace std;
 int main()
 {
@@ -15,13 +15,13 @@ int main()
 
     int array[row][col];
 
-    // cout<< "Enter input: " << endl;
+    srand(time(0));
     for (int i = 0; i < row; i++)
     {
         for (int j = 0; j < col; j++)
         {
             array[i][j] = rand() % 25;
-            // cin >> array[i][j];
+           
             cout << array[i][j] << "   ";
         }
 
